@@ -113,4 +113,10 @@ a:link{
 .modal-content p {
     color: #A94442;
 }
+.echarts_left,
+.echarts_right {
+  height: 400px;
+  width: 48%;
+  background-color: skyblue;
+}
 

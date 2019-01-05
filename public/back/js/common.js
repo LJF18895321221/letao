@@ -12,10 +12,7 @@ $(document).ajaxStop(function() {
 $(function() {
   //功能1.二级导航显示与隐藏
   $(".lt_slide .category").on("click", function() {
-    $(this)
-      .next()
-      .stop()
-      .slideToggle();
+    $(this).next().stop().slideToggle();    
   });
 
   //功能2. 侧边栏的显示与隐藏
