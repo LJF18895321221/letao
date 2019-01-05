@@ -1,0 +1,116 @@
+ul,li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a:active,
+a:hover,
+a:visited,
+a:link{
+    text-decoration: none;
+}
+.lt_slide{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #222D32;
+    width: 180px;
+    height: 100%;
+    z-index: 999;
+    transition: all 1s;
+
+}
+.lt_slide .brand{
+    width: 180px;
+    height: 50px;
+    background-color: #367FA9;
+}
+.lt_slide .brand a{
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+}
+.lt_slide .user{
+    width: 180px;
+    padding-top: 30px;
+}
+.lt_slide .user img{
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.lt_slide .user p {
+    text-align: center;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+  
+}
+.lt_slide .nav a {
+    display: block;
+    padding-left: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    border-left: 3px solid transparent;
+}
+.lt_slide .nav a i{
+    margin-right: 5px;
+}
+.lt_slide .nav .child a{
+    padding-left: 60px;
+}
+.lt_slide .nav a.current{
+    background-color: #1D1F21;    
+    border-left: 3px solid #006699;
+}
+/* 给左侧栏添加一个类 */
+.lt_slide.hidemenu{
+    left: -180px;
+}
+/* 右边侧栏 */
+.lt_right_slide{
+    padding-left: 180px;
+    height: 2000px;
+    background-color: pink;
+    padding-top: 50px;
+    transition: all 1s;
+}
+.lt_right_slide.hidemenu{
+    padding-left: 0px;
+}
+.lt_right_slide .header{
+    background-color: #3C8DBC;
+    position: fixed;
+    left: 0px;
+    top: 0;
+    padding-left: 180px;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    transition: all 1s;
+    
+}
+.lt_right_slide .header.hidemenu{
+    padding-left: 0px;
+}
+.lt_right_slide .header a{
+    display: block;
+    height: 50px;
+    width: 50px;
+    color:#fff;
+    font-size: 20px;
+    text-align: center;
+}
+.lt_right_slide .breadcrumb{
+    margin-left: 15px;
+}
+.modal-content p {
+    color: #A94442;
+}
+
