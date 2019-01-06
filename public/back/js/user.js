@@ -65,7 +65,8 @@ $(function() {
       dataType: "json",
       data: {
         id:id,
-        isDelete:isDelete
+        isDelete:isDelete 
+        
       },
       success: function(res) {
         console.log(res);
