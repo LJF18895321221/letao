@@ -137,4 +137,9 @@ height: 400px;
 width: 48%;
 /* background-color: skyblue; */
 }
+.box .table th,
+.box .table td{
+  text-align: center;
+  vertical-align: middle;
+}
 
