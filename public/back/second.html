@@ -111,16 +111,21 @@
                           <!-- 模板渲染处 -->
                         </ul>
                       </div>
+                      <!-- 隐藏域,用于提交ID -->
+                      <input type="hidden" name="categoryId" >
                 </div>
                   <div class="form-group">
-                    <input type="text" name="categoryName" class="form-control" placeholder="请输入二级分类名称">
+                    <!-- 用于品牌名称提交 -->
+                    <input type="text" name="brandName" class="form-control" placeholder="请输入二级分类名称">
                   </div>
                   <div class="form-group">
                       <label class="btn btn-default" for="fileupload">上传图片</label>
                       <input type="file" name="pic1"  data-url="/category/addSecondCategoryPic" id="fileupload" style="display: none">
                     </div>
-                  <div class="form_group" id="Box">
+                  <div class="form-group" id="Box">
                       <img style="width: 100px;" src="./images/none.png" alt="">
+                      <!-- 隐藏域,用于提交图片地址 -->
+                      <input type="hidden" name="brandLogo" >
                   </div>
                 </div>
               <div class="modal-footer">
@@ -178,9 +183,9 @@
     
     <script type="text/html" id="dropdownTpl">
       {{ each rows v i }}
-        <li><a href="#">{{ v.categoryName }}</a></li>
+        <li><a data-id = "{{v.id}}" href="#">{{ v.categoryName }}</a></li>
       {{ /each }}
-    </script>
+    </script> 
     <script src="./lib/jquery/jquery.min.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
